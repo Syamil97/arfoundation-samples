@@ -30,5 +30,16 @@ namespace UnityEngine.XR.ARFoundation.Samples
             if (Application.CanStreamedLevelBeLoaded("Menu"))
                 SceneManager.LoadScene("Menu", LoadSceneMode.Single);
         }
+        public void FrontCam()
+        {
+            if (Application.CanStreamedLevelBeLoaded("FrontCamera"))
+                SceneManager.LoadScene("FrontCamera", LoadSceneMode.Single);
+        }
+        public void BackCam()
+        {
+            if (Application.CanStreamedLevelBeLoaded("BackCamera"))
+                SceneManager.LoadScene("BackCamera", LoadSceneMode.Single);
+        }
+
     }
 }
